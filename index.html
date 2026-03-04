@@ -59,6 +59,12 @@
       @media (prefers-reduced-motion: reduce) {
         .cw-track { animation: none; }
       }
+      .cw-quote-clamp {
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
     </style>
   </head>
   <body class="bg-cream text-slate-900">
@@ -85,22 +91,32 @@
               <h1 class="text-4xl md:text-6xl font-bold text-dark-green leading-tight mb-6">
                 For Cricket Widows That Don't Want To Do The Season Alone
               </h1>
-              <p class="text-xl text-slate-600 mb-8 leading-relaxed">
+              <p class="text-xl text-slate-600 mb-4 leading-relaxed">
                 Stop carrying the weight of the season on your own (you don't have to!). Join our loving community where you'll soon find out that the cricket season isn't the problem... You just haven't had anyone to laugh about it with yet!
               </p>
 
-              <div class="max-w-[560px]">
+              <div class="hidden md:block max-w-[560px] mt-4 -mb-8">
                 <iframe
                   src="https://subscribe-forms.beehiiv.com/9b3dd414-2838-495e-8e1e-e38792c99bf3"
                   class="beehiiv-embed"
                   data-test-id="beehiiv-embed"
                   frameborder="0"
                   scrolling="no"
-                  style="width: 560px; height: 211px; margin: 0; border-radius: 0px 0px 0px 0px !important; background-color: transparent; box-shadow: 0 0 #0000; max-width: 100%;"
+                  style="width: 560px; height: 115px; margin: 0; border-radius: 0px 0px 0px 0px !important; background-color: transparent; box-shadow: 0 0 #0000; max-width: 100%;"
+                ></iframe>
+              </div>
+              <div class="md:hidden w-full mt-7 mb-0">
+                <iframe
+                  src="https://subscribe-forms.beehiiv.com/31076854-c774-4326-837f-1456c3ca527e"
+                  class="beehiiv-embed"
+                  data-test-id="beehiiv-embed"
+                  frameborder="0"
+                  scrolling="no"
+                  style="width: 100%; height: 148px; margin: -20px 0 0 0; border-radius: 0px 0px 0px 0px !important; background-color: transparent; box-shadow: 0 0 #0000; max-width: 100%;"
                 ></iframe>
               </div>
 
-              <p class="mt-4 text-sm text-slate-400 font-medium italic">100% Free - Limited to 100 spots this month!</p>
+              <p class="mt-0 md:mt-6 text-sm text-slate-400 font-medium italic">100% Free - Limited to 100 spots this month!</p>
             </div>
             <div class="relative">
               <div class="w-full aspect-square rounded-3xl bg-sage overflow-hidden shadow-2xl relative group">
@@ -411,7 +427,7 @@
         </div>
       </section>
 
-      <section class="py-16 md:py-24 px-6 md:px-12 bg-yellow">
+      <section class="py-16 md:pt-0 md:pb-24 md:-mt-24 px-6 md:px-12 bg-yellow">
         <div class="max-w-6xl mx-auto">
           <div class="max-w-4xl mx-auto text-center space-y-10">
             <h2 class="text-4xl md:text-6xl font-bold text-dark-green leading-tight">Ready to reclaim your Saturdays?</h2>
@@ -419,24 +435,34 @@
               I’m opening exactly <span class="font-bold underline">100 free spots</span> this month. Once these are filled, the doors close so we can focus on the women inside.
             </p>
 
-            <div class="bg-white p-10 md:p-16 rounded-[40px] shadow-2xl border-4 border-dark-green inline-block w-full">
-              <h3 class="text-3xl font-bold text-dark-green mb-6">Join The Club For Free</h3>
-              <div class="flex items-center justify-center gap-4 mb-8 text-dark-green/60 uppercase tracking-widest text-sm font-bold">
+            <div class="bg-white p-4 md:p-8 rounded-[40px] shadow-2xl border-4 border-dark-green inline-block w-full">
+              <h3 class="text-3xl font-bold text-dark-green mb-3">Join The Club For Free</h3>
+              <div class="flex items-center justify-center gap-4 mb-5 text-dark-green/60 uppercase tracking-widest text-sm font-bold">
                 <i data-lucide="clock" class="w-4 h-4"></i> <span id="spots-left-cta">100 SPOTS LEFT</span> • <i data-lucide="check-circle" class="w-4 h-4"></i> <span>100% PRIVATE</span>
               </div>
 
-              <div class="max-w-[560px] mx-auto">
+              <div class="hidden md:block max-w-[560px] mx-auto md:translate-x-2 md:translate-y-2">
                 <iframe
-                  src="https://subscribe-forms.beehiiv.com/9b3dd414-2838-495e-8e1e-e38792c99bf3"
+                  src="https://subscribe-forms.beehiiv.com/6d6b5208-7a47-43c9-9022-50cf83aa53db"
                   class="beehiiv-embed"
                   data-test-id="beehiiv-embed"
                   frameborder="0"
                   scrolling="no"
-                  style="width: 560px; height: 211px; margin: 0; border-radius: 0px 0px 0px 0px !important; background-color: transparent; box-shadow: 0 0 #0000; max-width: 100%;"
+                  style="width: 100%; height: 60px; margin: 0; border-radius: 0px 0px 0px 0px !important; background-color: transparent; box-shadow: 0 0 #0000; max-width: 100%;"
+                ></iframe>
+              </div>
+              <div class="md:hidden w-full -mt-2 -mb-8">
+                <iframe
+                  src="https://subscribe-forms.beehiiv.com/31076854-c774-4326-837f-1456c3ca527e"
+                  class="beehiiv-embed"
+                  data-test-id="beehiiv-embed"
+                  frameborder="0"
+                  scrolling="no"
+                  style="width: 100%; height: 188px; margin: 0 0 -24px 0; border-radius: 0px 0px 0px 0px !important; background-color: transparent; box-shadow: 0 0 #0000; max-width: 100%;"
                 ></iframe>
               </div>
 
-              <p class="mt-8 text-slate-400 text-sm leading-relaxed">
+              <p class="mt-0 md:mt-5 text-slate-400 text-sm leading-relaxed">
                 Come inside. Take a breath. Realise you aren't crazy… <br />
                 You're just a Cricket Widow, and you've <span class="italic">finally</span> found your people.
               </p>
@@ -459,7 +485,7 @@
             </div>
 
             <div class="cw-marquee cw-marquee-mask overflow-hidden">
-              <div id="cw-testimonial-track-light" class="cw-track flex gap-6 w-[200%] items-stretch" style="--cw-speed: 52s;"></div>
+              <div id="cw-testimonial-track-light" class="cw-track flex gap-6 w-[200%] items-start" style="--cw-speed: 52s;"></div>
             </div>
           </div>
         </div>
@@ -612,11 +638,45 @@
             name: 'Club member',
             meta: 'Fixture list season',
           },
+          {
+            quote: "Good morning, I’ve just stumbled on your page and I love it! Some of it is so funny but I love the detail in your captions and it’s nice to read that it’s not just me that feels that way. So Thankyou! 👏💞",
+            name: 'Lucy',
+            meta: 'Community member',
+          },
+          {
+            quote: "Omg finally someone that can relate to my single life during the summer season. I have been howling at your posts, sooooooo true!!!! I’ve had 25 years of this and each year I say I’m not going to let it get to me..... but it does 😜😜😜",
+            name: 'Libby',
+            meta: 'Community member',
+          },
+          {
+            quote: "Hello! Just wanted to say I am so glad I found your page, I definitely needed to find it when I did. This is my first cricket season with my boyfriend, we have been together since the end of 2024 so it’s still fairly new and not been through this with him before. He warned me and I thought I got it...but I defo have had an awakening 😂 lots of learnings too! I’m interested in coming the Otley Run to say hi but as I live in the north west I will likely drive but still come along. Not sure I’ll have the cricket whites either haha. Random question and I’m sure it doesn’t even matter...are there a range of ages? I’m 33 (but don’t feel it haha) x",
+            name: 'Sarah',
+            meta: 'Community member',
+          },
+          {
+            quote: "Just a message to say I love your page, love being a part of the cricket WAG community and so nice seeing you post about it 😊 double header coming up this weekend 😜 x",
+            name: 'Emily',
+            meta: 'WAG community member',
+          },
+          {
+            quote: "Just want to say your posts make me feel so seen😂 I’m a South African cricket widow with a cricketer who has done back to back UK seasons 🙃 your ‘what if’ post is so real and helping me feel less alone😂",
+            name: 'Jacqueline',
+            meta: 'Community member',
+          },
+          {
+            quote: "Your cricket widow post. Unreal 😂 I have been for 8.5 years now! My boyfriend was professional and is now semi professional so it’s very full on!! We have had double headers for 4 weeks now and this weekend is now a triple header 😂 No one seems to get how hard it can be for us girls xxx",
+            name: 'Kelly',
+            meta: 'Community member',
+          },
+          {
+            quote: "Liv, THANK YOU SO MUCH! Thank you for posting this. Finding your page was the BEST thing that happened to me this year. To quote you in the most relatable way ‘it’s the first time I’ve felt seen’. Unless people are involved in cricket, they just think we sound dramatic and for a while, I truly believed I was the problem for feeling the way I do at times. You’ve created such a safe space for us all to chat and relate and share experiences and il be forever grateful to you. I cried with you whilst watching this because it’s such a unique situation that only a minority understand. So again, thank you for shining a light on something that a lot of us were scared to talk about at the risk of sounding silly. I hope you have a lovely new year and get that precious time with your cricketer and family. I hope the boys go well next season, but equally, I hope we do to. From one Liv to another, go well our lovely cricket widow! X",
+            name: 'Olivia',
+            meta: 'Community member',
+          },
         ];
 
         function cardHtml(t) {
           if (variant === 'light') {
-            const initial = (t.name || 'A').trim().slice(0, 1).toUpperCase();
             return `
               <article class="min-w-[320px] md:min-w-[560px] rounded-[44px] bg-white shadow-[0_30px_70px_rgba(0,0,0,0.18)] border border-slate-100 px-9 py-8 text-left">
                 <div class="flex gap-1 mb-5 text-dark-green">
@@ -629,15 +689,12 @@
                 <p class="text-3xl md:text-4xl font-bold serif text-dark-green leading-tight mb-4">
                   "${escapeHtml((t.quote || '').slice(0, 58).trim())}${t.quote && t.quote.length > 58 ? '…' : ''}"
                 </p>
-                <p class="text-slate-500 italic leading-relaxed text-base md:text-lg">
+                <p class="cw-quote-clamp text-slate-500 italic leading-relaxed text-base md:text-lg">
                   "${escapeHtml(t.quote)}"
                 </p>
-                <div class="mt-8 flex items-center gap-4">
-                  <div class="w-12 h-12 rounded-full bg-lavender flex items-center justify-center text-dark-green font-bold">${escapeHtml(initial)}</div>
-                  <div>
-                    <p class="font-bold text-dark-green">${escapeHtml(t.name)}</p>
-                    <p class="text-xs text-slate-400">${escapeHtml(t.meta)}</p>
-                  </div>
+                <div class="mt-8">
+                  <p class="font-bold text-dark-green">${escapeHtml(t.name)}</p>
+                  <p class="text-xs text-slate-400">${escapeHtml(t.meta)}</p>
                 </div>
               </article>
             `;
