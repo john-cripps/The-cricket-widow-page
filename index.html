@@ -65,10 +65,30 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
       }
+      @media (min-width: 768px) {
+        .beehiiv-pc-compact-wrap {
+          height: 90px;
+          overflow: hidden;
+        }
+        .beehiiv-pc-compact {
+          height: 90px !important;
+          max-height: 90px !important;
+        }
+      }
+      @media (max-width: 767px) {
+        .beehiiv-mobile-compact-wrap {
+          height: 120px;
+          overflow: hidden;
+        }
+        .beehiiv-mobile-compact {
+          height: 120px !important;
+          max-height: 120px !important;
+        }
+      }
     </style>
   </head>
-  <body class="bg-cream text-slate-900">
-    <div id="app" class="min-h-screen selection:bg-yellow selection:text-dark-green">
+  <body class="bg-cream text-slate-900 overflow-x-hidden">
+    <div id="app" class="min-h-screen selection:bg-yellow selection:text-dark-green overflow-x-hidden">
       <div class="bg-sage text-dark-green py-3 md:py-4 px-3 md:px-6 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 text-center md:text-left">
           <div class="logo-font cw-topbar-logo font-bold uppercase text-dark-green leading-none text-center">
@@ -441,24 +461,24 @@
                 <i data-lucide="clock" class="w-4 h-4"></i> <span id="spots-left-cta">100 SPOTS LEFT</span> • <i data-lucide="check-circle" class="w-4 h-4"></i> <span>100% PRIVATE</span>
               </div>
 
-              <div class="hidden md:block max-w-[560px] mx-auto md:translate-x-2 md:translate-y-2">
+              <div class="hidden md:block max-w-[560px] mx-auto md:translate-x-2 md:translate-y-2 beehiiv-pc-compact-wrap">
                 <iframe
                   src="https://subscribe-forms.beehiiv.com/6d6b5208-7a47-43c9-9022-50cf83aa53db"
-                  class="beehiiv-embed"
+                  class="beehiiv-embed beehiiv-pc-compact"
                   data-test-id="beehiiv-embed"
                   frameborder="0"
                   scrolling="no"
-                  style="width: 100%; height: 60px; margin: 0; border-radius: 0px 0px 0px 0px !important; background-color: transparent; box-shadow: 0 0 #0000; max-width: 100%;"
+                  style="width: 100%; height: 90px; margin: 0; border-radius: 0px 0px 0px 0px !important; background-color: transparent; box-shadow: 0 0 #0000; max-width: 100%;"
                 ></iframe>
               </div>
-              <div class="md:hidden w-full -mt-2 -mb-8">
+              <div class="md:hidden w-full mt-0 mb-0 beehiiv-mobile-compact-wrap">
                 <iframe
-                  src="https://subscribe-forms.beehiiv.com/31076854-c774-4326-837f-1456c3ca527e"
-                  class="beehiiv-embed"
+                  src="https://subscribe-forms.beehiiv.com/6d6b5208-7a47-43c9-9022-50cf83aa53db"
+                  class="beehiiv-embed beehiiv-mobile-compact"
                   data-test-id="beehiiv-embed"
                   frameborder="0"
                   scrolling="no"
-                  style="width: 100%; height: 188px; margin: 0 0 -24px 0; border-radius: 0px 0px 0px 0px !important; background-color: transparent; box-shadow: 0 0 #0000; max-width: 100%;"
+                  style="width: 100%; height: 120px; margin: 0; border-radius: 0px 0px 0px 0px !important; background-color: transparent; box-shadow: 0 0 #0000; max-width: 100%;"
                 ></iframe>
               </div>
 
